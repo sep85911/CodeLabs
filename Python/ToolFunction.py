@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 class CObj(object):
 
     def __init__(self):
@@ -13,5 +15,5 @@ class CObj(object):
         if val < 0:
             return
         self.__id = val;
-        print("成功设置ID!")
+        print("戝功设置ID!")
     
