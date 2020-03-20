@@ -15,5 +15,5 @@ class CObj(object):
         if val < 0:
             return
         self.__id = val;
-        print("戝功设置ID!")
+        print("成功设置ID!")
     
