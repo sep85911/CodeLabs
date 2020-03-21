@@ -4,10 +4,6 @@ import sys;
 import ToolFunction;
 
 if __name__ == "__main__":
-    obj001 = ToolFunction.CObj();
-
-    print(obj001.ID);
-
-    obj001.ID = -242;
+    obj001 = ToolFunction.CCreature();
 
     print(obj001.ID);

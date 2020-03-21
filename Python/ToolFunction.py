@@ -16,4 +16,7 @@ class CObj(object):
             return
         self.__id = val;
         print("成功设置ID!")
+
+class CCreature(CObj): #就算子类什么都不做，还是有和父类一样都东西
+    pass;
     
