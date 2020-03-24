@@ -8,14 +8,15 @@ if __name__ == "__main__":
     obj001 = ToolFunction.CCreature();
 
 
-    sWord = "abcdef234gefafdffdfegsdggrgrgfdfafefefefdsss";
+    sWord = "abcdef234gefaf344dff34dfgd5765fegsdg3453grgrgfdfafefefefdsss";
 
     sPattern = "[A-Za-z]+";
     style001 = re.compile(sPattern);
-    a = style001.match(sWord);
+    a = style001.findall(sWord);
 
-    a.group(0);
+    for i in a:
+        print(i)
 
 
 
-    print(obj001.ID);
+    # print(obj001.ID);
