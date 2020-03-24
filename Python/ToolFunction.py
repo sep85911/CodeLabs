@@ -19,4 +19,16 @@ class CObj(object):
 
 class CCreature(CObj): #就算子类什么都不做，还是有和父类一样都东西
     pass;
+
+# 我自己都定制类学习专用类 嘿嘿
+class CCustomCls:
+
+    def __init__(self,name):
+        self.__name = name;
+
+    def __str__(self):
+        return "This is my CustomClass %s " % self.__name;
+
+        
+
     
