@@ -6,8 +6,6 @@ import logging;
 import ToolFunction;
 import Expection;
 
-from enum import Enum;
-
 if __name__ == "__main__":
     obj001 = ToolFunction.CCreature();
 
@@ -34,11 +32,11 @@ if __name__ == "__main__":
     print(callable(obj002));
     print(callable(obj001));
 
-    Opt = Enum("Options",("a","b","c","d"));
+    # Opt = Enum("Options",("a","b","c","d"));
 
     #遍历枚举
-    for name,member in Opt.__members__.items():
-        print(name,member,member.value);
+    #for name,member in Opt.__members__.items():
+     #   print(name,member,member.value);
 
     # print(obj001.ID);
 
@@ -46,5 +44,7 @@ if __name__ == "__main__":
         Expection.testError(0);
     except ZeroDivisionError as e:
         logging.exception(e);
+
+    
 
     
