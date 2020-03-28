@@ -1,4 +1,4 @@
 # CodeLabs
 Learn Programming
 
-##这是我的程序学习项目 主要是Python
+##杩欐槸鎴戠殑绋嬪簭瀛︿範椤圭洰 涓昏鏄痯ython

@@ -32,6 +32,12 @@ if __name__ == "__main__":
     print(callable(obj002));
     print(callable(obj001));
 
+
+    print('操作系统名字是：' + os.name)
+    print(os.uname());
+
+    print(os.environ.get("PATH"));
+
     # Opt = Enum("Options",("a","b","c","d"));
 
     #遍历枚举
@@ -43,7 +49,7 @@ if __name__ == "__main__":
     try:
         Expection.testError(0);
     except ZeroDivisionError as e:
-        logging.exception(e);
+        print('这里除数为0 出错了！')
 
     
 
