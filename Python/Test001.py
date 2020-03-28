@@ -1,8 +1,10 @@
 import os;
 import sys;
 import re;
+import logging;
 
 import ToolFunction;
+import Expection;
 
 from enum import Enum;
 
@@ -27,7 +29,10 @@ if __name__ == "__main__":
     for i in obj002:
         print(i);
 
-    print(obj002[5:12]);
+    print(obj002.age);
+    print(obj002.this);
+    print(callable(obj002));
+    print(callable(obj001));
 
     Opt = Enum("Options",("a","b","c","d"));
 
@@ -36,5 +41,10 @@ if __name__ == "__main__":
         print(name,member,member.value);
 
     # print(obj001.ID);
+
+    try:
+        Expection.testError(0);
+    except ZeroDivisionError as e:
+        logging.exception(e);
 
     

@@ -24,11 +24,11 @@ class CCreature(CObj): #就算子类什么都不做，还是有和父类一样�
 class CCustomCls:
 
     def __init__(self,name):
-        self.__name = name;
+        self.name = name;
         self.a, self.b = 0,1;
 
     def __str__(self):
-        return "This is my CustomClass %s " % self.__name;
+        return "This is my CustomClass %s " % self.name;
 
     def __iter__(self):
         return self; #实例本身就是迭代对象 故返回自己
@@ -58,6 +58,15 @@ class CCustomCls:
                     L.append(a);
                 a,b = b,a + b;
             return L
+
+    def __getattr__(self,attr): #访问不存在对属性时 可以用这个函数处理 接受一个参数：要访问的属性名
+        if attr == "age":
+            return 123;
+        else:
+            return "no this attr";
+
+    def __call__(self): #定义了这个函数 类的实例a就可以调用 像这样：a()
+        return "这个东西可以被调用噢！";
 
 
         
