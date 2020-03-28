@@ -21,7 +21,13 @@ if __name__ == "__main__":
 
     obj002 = ToolFunction.CCustomCls("fucker");
 
+    obj002;
     print(obj002);
+
+    for i in obj002:
+        print(i);
+
+    print(obj002[5:12]);
 
     Opt = Enum("Options",("a","b","c","d"));
 
