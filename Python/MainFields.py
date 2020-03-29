@@ -34,7 +34,9 @@ if __name__ == "__main__":
 
 
     print('操作系统名字是：' + os.name)
-    print(os.uname());
+
+    if os.name == 'posix':
+        print(os.uname());
 
     print(os.environ.get("PATH"));
 
