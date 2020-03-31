@@ -6,6 +6,8 @@ import logging;
 import ToolFunction;
 import Expection;
 
+from datetime import datetime;
+
 if __name__ == "__main__":
     obj001 = ToolFunction.CCreature();
 
@@ -40,6 +42,8 @@ if __name__ == "__main__":
 
     print(os.environ.get("PATH"));
 
+
+
     # Opt = Enum("Options",("a","b","c","d"));
 
     #遍历枚举
@@ -52,6 +56,11 @@ if __name__ == "__main__":
         Expection.testError(0);
     except ZeroDivisionError as e:
         print('这里除数为0 出错了！')
+
+    
+    now = datetime.now();
+    print(now.timestamp()); #使用timestamp()函数 将datetime类型转化为以秒为准的数字
+
 
     
 
