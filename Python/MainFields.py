@@ -6,7 +6,7 @@ import logging;
 import ToolFunction;
 import Expection;
 
-from datetime import datetime;
+from datetime import datetime,timedelta;
 
 if __name__ == "__main__":
     obj001 = ToolFunction.CCreature();
@@ -60,6 +60,13 @@ if __name__ == "__main__":
     
     now = datetime.now();
     print(now.timestamp()); #使用timestamp()函数 将datetime类型转化为以秒为准的数字
+
+    print(datetime.fromtimestamp(1)); #将以秒为准的数字转化为datetime格式 fromtimestamp函数
+
+
+    print(now.strftime("%H:%M"))
+
+    print(now + timedelta(days = 12,hours=8)) # 使用timedelta可以轻松计算前后时间
 
 
     
