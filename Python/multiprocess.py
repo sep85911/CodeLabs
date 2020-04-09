@@ -6,6 +6,8 @@ import os,time,random;
 
 from multiprocessing import Pool;
 
+import subprocess;
+
 def long_time_task(name):
     print("This is %s" % (name));
     start = time.time();
@@ -17,7 +19,7 @@ if __name__ == "__main__":
     
     print("Parent proecss is %s" % os.getpid()); #获取当前进程id
 
-    p = Pool(4); #创建一个进程池
+    p = Pool(5); #创建一个进程池
     for i in range(5):
         p.apply_async(long_time_task,args=(i,));
     
