@@ -25,15 +25,16 @@
     <a href="https://www.douban.com/">去豆瓣</a>
     <a href="javascript:while(1){alert('让你手欠！')}">来点我呀！</a>
 
-    <form action="" method="GET">
+    <form method="GET" action="">
         <p>
-            username:<input type="text" placeholder="请输入用户名">
+            <!-- 要提交 必须有name -->
+            username:<input type="text" placeholder="请输入用户名" name="myusername"> 
         </p>
         <p>
-            password:<input type="password">
+            password:<input type="password" name="mypassword">
         </p>
 
-        <input type="submit" value="提交">
+        <input type="submit">
     </form>
 </body>
 </html>
