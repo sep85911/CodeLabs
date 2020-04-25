@@ -1,3 +1,11 @@
 .icon-mobile:before {
     content: "\e958";
   }
+
+
+  .head-logo{
+
+    width:214px;
+    height:50px;
+
+  }
