@@ -5,17 +5,34 @@ body{
 
 .header
 {
-  width:1440px;
+  width:1903px;
   height:80px;
+}
+
+.header-container
+{
+  width:1240px;
+  height:65px;
+  margin:0px auto;
+}
+
+.clearfix {
+  content:"";
+  display:block;
+  clear:both;
 }
 
 .head-logo{
 
-  width:214px;
+  width:214;
   height:50px;
+}
 
+.header-left{
+  margin:0 3px;
 }
 
 .header-part {
+  margin-top:15px;
   float:left;
 }
