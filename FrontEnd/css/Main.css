@@ -36,3 +36,14 @@ body{
   margin-top:15px;
   float:left;
 }
+
+.header-middle
+{
+  width:520px;
+  margin:30px 20px;
+}
+
+.search-bar input{
+  width:428px;
+  height:36px;
+}
