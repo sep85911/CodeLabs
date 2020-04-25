@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Micah's Homepage</title>
+
+    <style>
+        .container{
+            background: rgb(91, 26, 151);
+            padding:1px;
+        }
+
+        .clearfix::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .float-test{
+            margin:5px;
+            width:100px;
+            height:100px;
+            background-color:rgb(136, 83, 83);
+            float:left;
+        }
+    </style>
 </head>
 <body>
     <ol type="I" reversed="reversed">
@@ -36,6 +57,21 @@
 
         <input type="submit">
     </form>
+
+    <div class="clearfix container">
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <div class="float-test"></div>
+        <!-- <div class="clearfix"></div> -->
+    </div>
 
     
 </body>
