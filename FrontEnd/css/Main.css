@@ -7,7 +7,7 @@
 .header
 {
   /* width:1903px; */
-  /* height:80px; */
+  height:80px;
 }
 
 .header-container
@@ -129,4 +129,35 @@ input:focus{
 
 .sign a:hover{
   color:#fe6a00
+}
+
+.nav {
+  /* background-color: antiquewhite; */
+  margin-top:10px;
+}
+
+.nav-container{
+  width:1020px;
+  height:52px;
+  margin-left:100px;
+  padding-left:220px;
+}
+
+.nav-buttons{
+  line-height:52px;
+}
+
+.nav-buttons li{
+  list-style-type: none;
+  padding:0 24px;
+}
+
+
+.nav-buttons li a{
+  text-decoration: none;
+  color:#333;
+}
+
+.nav-buttons li a:hover{
+  color:#fe6a00;
 }
