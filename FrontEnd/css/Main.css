@@ -73,6 +73,12 @@ input:focus{
   outline:none;
 }
 
+.icon-search
+{
+  font-size:22px;
+  color:white;
+}
+
 .search-bar .submit{
   width:60px;
   height:100%;
@@ -84,7 +90,43 @@ input:focus{
   cursor: pointer;
 }
 
-.icon {
-  font-size:20px;
-  color:white;
+.mobile {
+  margin:0 24px;
+}
+
+.mobile a{
+  font-size:14px;
+  color:#333;
+}
+
+.mobile a:hover{
+  color:#fe6a00;
+  cursor: pointer;
+}
+
+.icon-mobile {
+  font-size:22px;
+  color:#fe6a00;
+  vertical-align: -0.22em;
+  margin-right:5px;
+}
+
+.header-right {
+  margin-top:22px;
+  font-size:16px;
+  line-height:36px;
+}
+
+.sign {
+  padding:0 8px;
+}
+
+.sign a{
+  text-decoration: none;
+  font-size:14px;
+  color:#333;
+}
+
+.sign a:hover{
+  color:#fe6a00
 }
