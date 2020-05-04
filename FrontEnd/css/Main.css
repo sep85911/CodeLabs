@@ -161,3 +161,47 @@ input:focus{
 .nav-buttons li a:hover{
   color:#fe6a00;
 }
+
+.main{
+  margin-left:100px;
+  display: block;
+}
+
+.main-container
+{
+  background-color: cornflowerblue;
+  height:312px;
+  position:relative;
+}
+
+.main-left{
+  position: absolute;
+  height:364px;
+  width:220px;
+  top:-52px;
+  border-radius: 2px;
+}
+
+.main-left-title{
+  height:52px;
+  box-sizing: border-box;
+  line-height:52px;
+  border-radius: 2px;
+  background-color:#fe6a00;
+  font-size:18px;
+  color:white;
+  font-weight: normal;
+  padding-left:20px;
+}
+
+.slide-buttons li{
+  list-style-type: none;
+}
+
+.slide-buttons li a{
+  text-decoration: none;
+  color:#333;
+  margin-top:10px;
+  margin-bottom: 10px;
+  padding:10px 20px;
+}
