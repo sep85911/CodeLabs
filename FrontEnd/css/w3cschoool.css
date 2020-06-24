@@ -149,7 +149,7 @@ input:focus{
   /* background-color: antiquewhite; */
   margin-top:10px;
 
-  margin-left:220px;
+  /* margin-left:220px; */
 }
 
 .nav-container{
@@ -180,7 +180,7 @@ input:focus{
 
 .main{
   margin-left:100px;
-  padding-left:220px;
+  /* padding-left:220px; */
   display: block;
 
 }
