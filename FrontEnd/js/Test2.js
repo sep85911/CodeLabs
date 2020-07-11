@@ -29,3 +29,5 @@ div1.style.top = '123px';
 setInterval(function (){
    div1.style.left = parseInt( div1.style.left ) + 1 + 'px'
 },50)
+
+
