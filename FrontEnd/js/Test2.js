@@ -27,5 +27,10 @@ div1.style.top = '123px';
 
 //平移小方块
 setInterval(function (){
-   div1.style.left = parseInt( div1.style.left ) + 1 + 'px'
+
+    if( parseInt( div1.style.left ) < 900 )
+    {
+        div1.style.left = parseInt( div1.style.left ) + 1 + 'px'
+    }
+
 },50)
