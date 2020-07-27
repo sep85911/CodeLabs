@@ -35,4 +35,30 @@ setInterval(function (){
 
 },50)
 
+// 构造函数
+function Player(id)
+{
+    this.id = id;
+    this.name = "noname";
+    this.age = 123;
+}
 
+var p1 = new Player(1);
+console.log(p1.id);
+console.log(p1.age);
+
+var monster = {id:123,name:'mon1'};
+
+console.log(monster);
+
+var a = 321;
+if(a > 123)
+{
+    console.log("yes");
+}else if (b > 321)
+{
+
+}else
+{
+    
+}
