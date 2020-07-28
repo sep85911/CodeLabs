@@ -57,8 +57,23 @@ if(a > 123)
     console.log("yes");
 }else if (b > 321)
 {
-
+    console.log("no");
 }else
 {
-    
+    console.log("I'm not sure");
 }
+
+function isArray(myData)
+{
+    console.log(arguments.length); //arguments对象里有参数信息
+    return myData.constructor.toString().indexOf("Array") > -1;
+}
+
+console.log(isArray(123))
+
+// 检查一个字符串是否有子串
+console.log("frfrbbabcdd".indexOf("abc"))
+
+console.log("看看这个变量的类型用typeof这个操作符：" + typeof String(123))
+
+JSON.parse("")
