@@ -76,4 +76,42 @@ console.log("frfrbbabcdd".indexOf("abc"))
 
 console.log("看看这个变量的类型用typeof这个操作符：" + typeof String(123))
 
-JSON.parse("")
+var divs = document.getElementsByTagName('div');
+
+divs[0].style.width = "300px"
+
+divs[1].className = "changetest"
+// divs[1].style.backgroundColor = "#00f"
+
+function changetext(id)
+{
+
+    console.log(id + " " + typeof id)
+    if(id)
+    {
+        id.innerHTML = "fuck you!"
+    }else
+    {
+        id.innerHTML = "rest!"
+    }
+}
+
+
+function changecolor(id)
+{
+    var myself = document.getElementsByClassName("testclick")[0];
+    myself.innerHTML = "yes!"
+    myself.style.backgroundColor = "#ff0022"
+}
+
+function recovercolor(id)
+{
+    console.log("recovercolor")
+    id.innerHTML = "recover"
+    id.style.backgroundColor = "#123321"
+}
+
+function myclick001(id)
+{
+    console.log(id.innerHTML);
+}
