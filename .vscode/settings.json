@@ -1,3 +1,15 @@
 {
-
+    "editor.tokenColorCustomizations": {
+        "[Solarized Light]": {
+            "textMateRules": [
+                {              
+                    "name": "Comments",
+                    "scope":"comment",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        }
+    }
 }
