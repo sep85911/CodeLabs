@@ -2,5 +2,33 @@ var mylist = new Array()
 mylist[1] = "123";
 mylist[2] = 123;
 
-console.log("我就呵呵了" + typeof(mylist))
-console.log(mylist)
+
+var a = -1 / 0
+var b;
+console.log(a)
+console.log(b)
+// console.log(c)
+
+// var x = parseInt(window.prompt("input"))
+
+// var content = document.getElementsByTagName("div")[0];
+// content.innerHTML = x;
+dd = 123;
+document.write(window.dd + ' ')
+dd = 321;
+document.write(dd + " " + window.dd)
+
+x = 312
+console.log(x);
+console.log(window.x)
+
+function func001()
+{
+
+}
+
+console.log(func001)
+
+var func002 = function (){}
+
+console.log(func002)
