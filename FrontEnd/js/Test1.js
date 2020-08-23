@@ -22,13 +22,22 @@ x = 312
 console.log(x);
 console.log(window.x)
 
-function func001()
+function func001(a,b,c,d)
+{
+    console.log("this is func001")
+    console.log(arguments.length) //这个length属性的意思是参数个数 其实 arguments就是参数数组
+}
+
+console.log("---------------")
+
+console.log(c);
+
+var c = function()
 {
 
 }
 
-console.log(func001)
+if(NaN + ""){
+    console.log(1 + 34)
 
-var func002 = function (){}
-
-console.log(func002)
+}
