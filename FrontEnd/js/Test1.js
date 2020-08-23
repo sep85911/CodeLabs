@@ -40,4 +40,27 @@ var c = function()
 if(NaN + ""){
     console.log(1 + 34)
 
+console.log(func002)
+
+// 构造函数创建对象
+function CObj(firstname,lastname,id,sex)
+{
+    this.mFirstName = firstname;
+    this.mLastName = lastname;
+    this.mID = id;
+    this.mSex = sex;
 }
+
+var CPerson = 
+{
+    name:"Micah",
+    age:36,
+    sex:true,
+    skill:function()
+    {
+        console.log("Fuck you!");
+    }
+}
+
+console.log(screen.availHeight)
+console.log(screen.availWidth)
