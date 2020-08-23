@@ -39,8 +39,8 @@ var c = function()
 
 if(NaN + ""){
     console.log(1 + 34)
+}
 
-console.log(func002)
 
 // 构造函数创建对象
 function CObj(firstname,lastname,id,sex)
@@ -62,5 +62,18 @@ var CPerson =
     }
 }
 
-console.log(screen.availHeight)
-console.log(screen.availWidth)
+console.log(screen.availHeight);
+console.log(screen.availWidth);
+
+
+var div1 = document.getElementById("level1");
+var div2 = document.getElementById("level2");
+
+console.log(div1.style.width = "200px");
+console.log(div1.style.height = "300px");
+console.log(div1.style.backgroundColor = "rgb(32,153,175)");
+
+
+div1.children[0].style.width = "50px"
+div1.children[0].style.height = "50px"
+div1.children[0].style.backgroundColor = "#333"
