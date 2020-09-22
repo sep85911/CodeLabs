@@ -77,3 +77,13 @@ console.log(div1.style.backgroundColor = "rgb(32,153,175)");
 div1.children[0].style.width = "50px"
 div1.children[0].style.height = "50px"
 div1.children[0].style.backgroundColor = "#333"
+
+// for(let i = 0; i < 10 ; i ++)
+for(var i = 0; i < 10 ; i ++)
+{
+    console.log(i)
+}
+
+// 用于测试var和let的区别
+console.log("--------------------")
+console.log(i)
