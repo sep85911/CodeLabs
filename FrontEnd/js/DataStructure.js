@@ -47,3 +47,68 @@ var filtered = list002.filter(function(element){
 })
 
 console.log(filtered)
+
+
+
+// 栈类
+function Stack() {
+    // 栈中的属性
+    var items = []
+
+    // 栈相关的方法
+    // 压栈操作
+    this.push = function (element) {
+        items.push(element)
+    }
+
+    // 出栈操作
+    this.pop = function () {
+        return items.pop()
+    }
+
+    // peek操作
+    this.peek = function () {
+        return items[items.length - 1]
+    }
+
+    // 判断栈中的元素是否为空
+    this.isEmpty = function () {
+        return items.length == 0
+    }
+
+    // 获取栈中元素的个数
+    this.size = function () {
+        return items.length
+    }
+}
+
+var myStack = new Stack()
+
+myStack.push(1)
+myStack.push(2);
+myStack.push(2443)
+
+var lastone = myStack.pop()
+
+// 十进制转二进制
+function Dec2Bin(num)
+{
+    var tStack = new Stack();
+
+    var nMod = num;
+
+    while(nMod > 0){
+        tStack.push(nMod % 2);
+        nMod = Math.floor( nMod / 2);
+    }
+
+    var sBin = ""
+    while(!tStack.isEmpty())
+    {
+        sBin += tStack.pop();
+    }
+
+    return sBin;
+}
+
+console.log(Dec2Bin(5));
