@@ -116,7 +116,56 @@ console.log(Dec2Bin(5));
 console.log("_____________")
 var sText = "93432+";
 
-for(i = 0;i < sText.length; i ++)
+function JudgeSign(nChar)
 {
-    console.log(sText[i] + "  " + typeof sText[i]);
+    if(parseInt(nChar))
+    {
+        return 1
+    }else if(nChar == "(" || nChar == ")")
+    {
+        return 2
+    }else if(nChar == "+" || nChar == "-" || nChar == "*" || nChar == '/')
+    {
+        return 3
+    }
+
+    return -1
 }
+
+
+function Exp2Prexp( sText )
+{
+    var sSign = new Stack();    //运算符号栈
+    var sExp = ""
+    for(var i = 0; i < sText.length; i ++)
+    {
+        var curSign = sText[i];
+
+        if(parseInt(curSign))
+        {
+            sExp += curSign;    //如果是运算数 直接将运算数加入到后缀表达式中
+        }else
+        {
+            if(curSign == "(")
+            {
+                console.log("yes")
+            }else if(curSign == ")")
+            {
+
+            }
+            else if(curSign == "" )
+            {
+                console.log("no")
+            }
+        }
+    }
+
+}
+
+Exp2Prexp("d2d")
+
+console.log(JudgeSign('1'))
+console.log(JudgeSign('+'))
+console.log(JudgeSign('('))
+console.log(JudgeSign('a'))
+console.log(JudgeSign('/'))
