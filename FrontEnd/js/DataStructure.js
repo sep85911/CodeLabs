@@ -112,3 +112,11 @@ function Dec2Bin(num)
 }
 
 console.log(Dec2Bin(5));
+
+console.log("_____________")
+var sText = "93432+";
+
+for(i = 0;i < sText.length; i ++)
+{
+    console.log(sText[i] + "  " + typeof sText[i]);
+}
