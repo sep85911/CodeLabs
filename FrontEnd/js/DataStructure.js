@@ -141,22 +141,24 @@ function Exp2Prexp( sText )
     {
         var curSign = sText[i];
 
-        if(parseInt(curSign))
-        {
-            sExp += curSign;    //如果是运算数 直接将运算数加入到后缀表达式中
-        }else
-        {
-            if(curSign == "(")
-            {
-                console.log("yes")
-            }else if(curSign == ")")
-            {
+        var nType = JudgeSign(curSign);
 
-            }
-            else if(curSign == "" )
-            {
-                console.log("no")
-            }
+        switch (nType) {
+            case 1:
+                sExp += curSign;
+                break;
+            case 2:
+                if(curSign == "("){
+                    
+                }else{
+
+                }
+                break;
+            case 3:
+                
+                break;
+            default:
+                break;
         }
     }
 
