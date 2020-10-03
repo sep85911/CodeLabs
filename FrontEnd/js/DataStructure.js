@@ -132,39 +132,91 @@ function JudgeSign(nChar)
     return -1
 }
 
+var tSignPrio = {
+    "#":0,
+    "+":1,
+    "-":1,
+    "*":3,
+    "/":3,
+    "(":6,
+    ")":6
+}
+
+console.log("这就可以当成映射了呀：" + tSignPrio["+"]);
+
+function JudgePrio(nFirst,nSecond) //判断运算符优先级 第一个高返回1 否则返回2
+{
+    if( tSignPrio[nFirst] < tSignPrio[nSecond])
+        return 1
+    else
+        return 2
+}
+
 
 function Exp2Prexp( sText )
 {
     var sSign = new Stack();    //运算符号栈
     var sExp = ""
+    sSign.push("#");
     for(var i = 0; i < sText.length; i ++)
     {
         var curSign = sText[i];
 
         var nType = JudgeSign(curSign);
 
+        console.log("这次是:" + curSign)
         switch (nType) {
             case 1:
                 sExp += curSign;
                 break;
             case 2:
                 if(curSign == "("){
-                    
+                    sSign.push(curSign);
                 }else{
-
+                    while(1)
+                    {
+                        var nTop = sSign.peek();
+                        if(nTop != "(")
+                        {
+                            sExp += nTop;
+                            sSign.pop();
+                        }
+                    }
+                    sSign.pop(); //把左括号出栈
                 }
                 break;
             case 3:
-                
+
+                while(1)
+                {
+
+                    var nTop = sSign.peek()
+                    var nPrio = JudgePrio(nTop,curSign);
+
+                    // console.log(nTop + "和", curSign+ "比较优先级的结果:"+nPrio)
+
+                    if(nPrio == 1)
+                    {
+                        break;
+                    }
+                    else{
+                        nTop = sSign.pop()
+                        sExp += nTop;
+                    }
+                }
+
+                sSign.push(curSign);
                 break;
             default:
                 break;
         }
     }
-
+    return sExp;
 }
 
-Exp2Prexp("d2d")
+var pre = Exp2Prexp("1*7+2+-")
+
+console.log("hahahha:" + pre);
 
 console.log(JudgeSign('1'))
 console.log(JudgeSign('+'))
