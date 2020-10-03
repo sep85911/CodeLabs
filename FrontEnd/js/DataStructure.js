@@ -214,12 +214,14 @@ function Exp2Prexp( sText )
     return sExp;
 }
 
-var pre = Exp2Prexp("1*7+2+-")
 
-console.log("hahahha:" + pre);
+var sTest = new Stack()
 
-console.log(JudgeSign('1'))
-console.log(JudgeSign('+'))
-console.log(JudgeSign('('))
-console.log(JudgeSign('a'))
-console.log(JudgeSign('/'))
+sTest.push("1")
+sTest.push("#");
+sTest.push(31);
+
+console.log(sTest.peek());
+console.log(sTest.size())
+console.log(sTest.pop());
+console.log(sTest.size())
